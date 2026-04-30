@@ -185,7 +185,7 @@ function SplashScreen({ onDone }) {
       animation: leaving ? 'splash-out 0.45s ease forwards' : 'none',
     }}>
       <div style={{ animation:'fade-up 0.6s ease 0.2s both', marginBottom:0 }}>
-        <img src="/saecio/uploads/saecio_LOGO.png" alt="saecio" style={{ height:128, filter:'brightness(0) invert(1)' }}/>
+        <img src="/saecio/saecio_LOGO.png" alt="saecio" style={{ height:128, filter:'brightness(0) invert(1)' }}/>
       </div>
       <div style={{ ...f(14,400), color:'rgba(255,255,255,0.5)', letterSpacing:'0.18em', textTransform:'uppercase', marginTop:-4, animation:'fade-up 0.6s ease 0.4s both' }}>Premium baby gear · Amsterdam</div>
       <div style={{ marginTop:52, width:4, height:4, borderRadius:'50%', background:'rgba(255,255,255,0.2)', animation:'fade-in 0.4s ease 1.1s both' }}/>
@@ -197,7 +197,7 @@ function SplashScreen({ onDone }) {
 function DubattiPhoto({ height=240 }) {
   return (
     <div style={{ width:'100%', height, overflow:'hidden', background:'#E8E0D5', position:'relative', flexShrink:0 }}>
-      <img src="/saecio/uploads/Screenshot%202026-04-27%20at%2018.03.11.png" alt="Dubatti Two E2"
+      <img src="/saecio/Screenshot%202026-04-27%20at%2018.03.11.png" alt="Dubatti Two E2"
         style={{ width:'100%', height:'100%', objectFit:'cover', objectPosition:'center 30%', display:'block' }}/>
       <div style={{ position:'absolute', bottom:10, right:12, ...f(9,300), letterSpacing:'0.12em', textTransform:'uppercase', color:'white', opacity:0.65, textShadow:'0 1px 4px rgba(0,0,0,0.4)' }}>Dubatti Two E2</div>
     </div>
@@ -215,13 +215,13 @@ function CatalogueScreen({ onNav }) {
   const cats = ['All','Strollers','Car Seats','Carriers','High Chairs','Cribs','Breast Pumps'];
 
   const ALL_LISTINGS = [
-    { id:1, name:'Dubatti Two E2',      category:'Strollers',    location:'Amsterdam', price:589, monthly:49, verified:true,  img:'/saecio/uploads/Screenshot%202026-04-27%20at%2018.03.11.png', bg:'#E8E0D5', hero:true },
-    { id:2, name:'Stokke Tripp Trapp',  category:'High Chairs',  location:'Amsterdam', price:148, monthly:18, verified:true,  img:'/saecio/uploads/Screenshot%202026-04-27%20at%2018.09.07.png', bg:'#D9CFC0' },
-    { id:3, name:'Bugaboo Fox 5',       category:'Strollers',    location:'Utrecht',   price:420, monthly:38, verified:false, img:'/saecio/uploads/Bugga.png', bg:'#C5C8C6' },
-    { id:4, name:'Maxi-Cosi Pebble',    category:'Car Seats',    location:'Haarlem',   price:195, monthly:22, verified:true,  img:'/saecio/uploads/Screenshot%202026-04-29%20at%2010.36.33.png', bg:'#C8C3C6' },
-    { id:5, name:'BabyBjörn Bouncer',   category:'Cribs',        location:'Rotterdam', price:79,  monthly:9,  verified:false, img:'/saecio/uploads/Bounder.png', bg:'#C4CEC0' },
-    { id:6, name:'Ergobaby Carrier',    category:'Carriers',     location:'Amsterdam', price:95,  monthly:11, verified:true,  img:'/saecio/uploads/Screenshot%202026-04-29%20at%2011.34.25-680cd409.png', bg:'#CEC8C0' },
-    { id:7, name:'Stokke Sleepi',       category:'Cribs',        location:'Den Haag',  price:320, monthly:29, verified:true,  img:'/saecio/uploads/Screenshot%202026-04-29%20at%2011.34.50.png', bg:'#D4CFC8' },
+    { id:1, name:'Dubatti Two E2',      category:'Strollers',    location:'Amsterdam', price:589, monthly:49, verified:true,  img:'/saecio/Screenshot%202026-04-27%20at%2018.03.11.png', bg:'#E8E0D5', hero:true },
+    { id:2, name:'Stokke Tripp Trapp',  category:'High Chairs',  location:'Amsterdam', price:148, monthly:18, verified:true,  img:'/saecio/Screenshot%202026-04-27%20at%2018.09.07.png', bg:'#D9CFC0' },
+    { id:3, name:'Bugaboo Fox 5',       category:'Strollers',    location:'Utrecht',   price:420, monthly:38, verified:false, img:'/saecio/Bugga.png', bg:'#C5C8C6' },
+    { id:4, name:'Maxi-Cosi Pebble',    category:'Car Seats',    location:'Haarlem',   price:195, monthly:22, verified:true,  img:'/saecio/Screenshot%202026-04-29%20at%2010.36.33.png', bg:'#C8C3C6' },
+    { id:5, name:'BabyBjörn Bouncer',   category:'Cribs',        location:'Rotterdam', price:79,  monthly:9,  verified:false, img:'/saecio/Bounder.png', bg:'#C4CEC0' },
+    { id:6, name:'Ergobaby Carrier',    category:'Carriers',     location:'Amsterdam', price:95,  monthly:11, verified:true,  img:'/saecio/Screenshot%202026-04-29%20at%2011.34.25-680cd409.png', bg:'#CEC8C0' },
+    { id:7, name:'Stokke Sleepi',       category:'Cribs',        location:'Den Haag',  price:320, monthly:29, verified:true,  img:'/saecio/Screenshot%202026-04-29%20at%2011.34.50.png', bg:'#D4CFC8' },
   ];
 
   const heroItem = ALL_LISTINGS[0];
@@ -246,10 +246,10 @@ function CatalogueScreen({ onNav }) {
       <div style={{ padding:'16px 20px 12px', flexShrink:0 }}>
         <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:16 }}>
           <div style={{ display:'flex', alignItems:'center' }}>
-            <img src="/saecio/uploads/saecio_LOGO.png" alt="saecio" style={{ height:44 }}/>
+            <img src="/saecio/saecio_LOGO.png" alt="saecio" style={{ height:44 }}/>
           </div>
           <button onClick={() => onNav('profile')} style={{ background:'none', border:'none', cursor:'pointer', padding:0 }}>
-            <img src="/saecio/uploads/6522516.png" alt="Profile" style={{ width:30, height:30, opacity:0.65 }}/>
+            <img src="/saecio/6522516.png" alt="Profile" style={{ width:30, height:30, opacity:0.65 }}/>
           </button>
         </div>
 
@@ -293,7 +293,7 @@ function CatalogueScreen({ onNav }) {
           <div style={{ position:'relative', marginBottom:12 }}>
             <div onClick={() => onNav('passport')} style={{ background:T.white, borderRadius:8, overflow:'hidden', cursor:'pointer', boxShadow:'0 1px 8px rgba(44,58,58,0.07)' }}>
               <div style={{ width:'100%', height:230, overflow:'hidden', background:'#E8E0D5', position:'relative', flexShrink:0 }}>
-                <img src="/saecio/uploads/Screenshot%202026-04-27%20at%2018.03.11.png" alt="Dubatti Two E2" style={{ width:'100%', height:'100%', objectFit:'cover', objectPosition:'center 30%', display:'block' }}/>
+                <img src="/saecio/Screenshot%202026-04-27%20at%2018.03.11.png" alt="Dubatti Two E2" style={{ width:'100%', height:'100%', objectFit:'cover', objectPosition:'center 30%', display:'block' }}/>
                 <div style={{ position:'absolute', bottom:10, right:12, ...f(9,300), letterSpacing:'0.12em', textTransform:'uppercase', color:'white', opacity:0.65, textShadow:'0 1px 4px rgba(0,0,0,0.4)' }}>Dubatti Two E2</div>
               </div>
               <div style={{ padding:'14px 16px 16px' }}>
@@ -621,7 +621,7 @@ function BuyerRequestScreen({ onNav, onSuccess }) {
         {/* Product summary pill */}
         <div style={{ display:'flex', alignItems:'center', gap:12, background:T.white, borderRadius:8, padding:'10px 12px', marginBottom:24, border:`1px solid ${T.border}` }}>
           <div style={{ width:44, height:44, borderRadius:5, overflow:'hidden', flexShrink:0, background:'#E8E0D5' }}>
-            <img src="/saecio/uploads/Screenshot%202026-04-27%20at%2018.03.11.png" alt="Dubatti" style={{ width:'100%', height:'100%', objectFit:'cover' }}/>
+            <img src="/saecio/Screenshot%202026-04-27%20at%2018.03.11.png" alt="Dubatti" style={{ width:'100%', height:'100%', objectFit:'cover' }}/>
           </div>
           <div style={{ flex:1 }}>
             <div style={{ ...f(13,400), color:T.slate }}>Dubatti Two E2</div>
@@ -836,7 +836,7 @@ function ProfileScreen({ onNav }) {
           <button onClick={() => onNav('catalogue')} style={{ background:'none', border:'none', cursor:'pointer', ...f(12,300), color:T.muted }}>Done</button>
         </div>
         <div style={{ display:'flex', alignItems:'center', gap:14, marginBottom:24 }}>
-          <img src="/saecio/uploads/6522516.png" alt="Profile" style={{ width:52, height:52, opacity:0.55 }}/>
+          <img src="/saecio/6522516.png" alt="Profile" style={{ width:52, height:52, opacity:0.55 }}/>
           <div>
             <div style={{ ...f(16,400), color:T.slate, letterSpacing:'-0.01em' }}>Marike V.</div>
             <div style={{ ...f(11,300), color:T.muted, marginTop:2 }}>marike@email.com · Member since 2024</div>
